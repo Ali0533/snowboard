@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+}
+
+
+/* header */
+
+.header {
+    background-color: #000;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.nav {
+    margin-left: 40px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0; /* Чтобы сделать невидимым */
+    font-weight: 700;
+    background-color: #fff;
+
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.basket a{
+    padding-left: 50px;
+}
+
+
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    background: url(picture/header/fon.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    font-size: 120px;
+    width: 650px;
+    line-height: 1.3;
+    margin-left: 50%;
+
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 30px;
+
+    margin-left: 1025px;
+    margin-top: 50px;
+
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 190px;
+    text-transform: uppercase;
+
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+/** catalog **/
+
+.catalog {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.catalog__text {
+    margin-top: 155px;
+    margin-bottom: 155px;
+}
+
+.section__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    margin-bottom: -40px;
+}
+
+.catalog__suptitle {
+    text-transform: uppercase;
+}
+
+
+/* slider */
+
+.goods {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+#left {
+    transform: rotate(180deg);
+    margin-left: 30px;
+}
+
+#right {
+    margin-right: 30px;
+}
+
+.goods div {
+    margin: 0 auto;
+}
+
+.goods a img {
+    margin: 0 50px;
+    text-align: center;
+    position: absolute;
+}
+
